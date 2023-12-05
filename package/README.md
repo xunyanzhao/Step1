@@ -108,4 +108,11 @@ attribute: self(this is a class independent on the other 3 classes)
 __init__(self):
 method
 save_message(self)
-It allows 
+It allows users to write down their recommendation to our app and save it into our storage center.
+
+ customer_service(self):
+This can offer users the contact phone number and email address.
+
+calculate_loan_repayment(self, loan_amount, loan_term, annual_interest_rate=0.05)
+The users can give this function loan_amount, period and interest rate as input, and this function will return the repayment as output.
+So it is similar to a calculator.
