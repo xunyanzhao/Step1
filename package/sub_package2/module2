@@ -9,20 +9,21 @@ class CustomerService:
         self.messages_storage.append(user_message)
         print("you message has been sent")
     def customer_service(self):
-        customer_choice=input("""Please choose the following options: 'email' if you would like to learn about our app functions
+        customer_choice=input("""Please choose the following options: 'email' if you would like to learn about our app functions" 
                                or 'contact_NO' if you would like to contact our human serive""")
         
-        if customer_choice="email":
+        if customer_choice=="email":
             print("Our email address is: xxxxxxxx@bankapp.com")
-        if customer_choice="contact_NO":
+        if customer_choice=="contact_NO":
             print("Our contact number is xxx-xxx-xxxx")
         else:
             print("Your answer is not clear, please enter the correct option")
     
     
 
-    def calculate_loan_repayment(self, loan_amount, loan_term, nnual_interest_rate=0.05):
+    def calculate_loan_repayment(self, loan_amount, loan_term, annual_interest_rate=0.05):
         
+        self.annual_interest_rate=annual_interest_rate
         monthly_interest_rate = self.annual_interest_rate / 12
 
         
