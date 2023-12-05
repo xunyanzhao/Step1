@@ -1,3 +1,4 @@
+from module1 import Account, AccountControl
 class Authorize(Account):
     def __init__(self, account_number, password, account_control):
         super().__init__(account_number, 0, password)
