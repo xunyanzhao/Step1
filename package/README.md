@@ -88,3 +88,24 @@ Deposits money into an account.
 withdrawal(self, user_id, amount)
 Withdraws money from an account.
 
+Class Authorize
+attibute: it inherite the Account class
+Methods:
+ __init__(self, account_number, password, account_control):
+initialize the class.
+
+login(self, entered_account_number, entered_password):
+It allows the users to log in their account when they have the valid set of account number and password which are in our database.
+
+logout(self):
+It allows the users' current login status logged out.
+
+delete_account(self, username)
+It allows the uers to delete their account once they are logged in.
+
+Class CustomerService
+attribute: self(this is a class independent on the other 3 classes)
+__init__(self):
+method
+save_message(self)
+It allows 
